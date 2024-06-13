@@ -15,9 +15,11 @@ useradd -m -G wheel,audio,video,storage,disk $name
 passwd $name
 
 cd /tmp
-git clone https://github.com/dishanskahya/arch-config
+git clone https://github.com/dishanshakya/arch-config
 
 mv -r /tmp/arch-config/* /home/$name/
 
-pacman -S lxappearance papirus-icon-theme gvfs-mtp
+pacman -S lxappearance papirus-icon-theme gvfs-mtp noto-fonts-emoji adobe-source-code-pro-fonts noto-fonts
+sudo
+echo '%wheel ALL=(ALL:ALL) ALL' >> /etc/sudoers
 echo 'Install bootloader with grub-install'
