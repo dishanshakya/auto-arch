@@ -22,7 +22,7 @@ fi
 
 #downloads
 
-pacstrap -K /mnt base linux linux-firmware vim firefox networkmanager i3 xorg ttf-dejavu ttf-3270-nerd polybar nitrogen pcmanfm alacritty rofi grub efibootmgr git network-manager-applet neofetch
+pacstrap -K /mnt base linux linux-firmware vim firefox networkmanager i3 xorg ttf-dejavu ttf-3270-nerd polybar nitrogen pcmanfm alacritty rofi grub efibootmgr git network-manager-applet neofetch xorg-xinit xcompmgr sudo 
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
