@@ -89,9 +89,9 @@ if [ "$efi" != 0 ]; then
 fi
 
 pacstrap -K /mnt base linux linux-firmware vim firefox networkmanager i3 xorg \
-    ttf-dejavu ttf-3270-nerd polybar nitrogen pcmanfm alacritty rofi grub \
-    efibootmgr git network-manager-applet neofetch xorg-xinit xcompmgr sudo \
-    picom xf86-input-synaptics
+    ttf-dejavu ttf-3270-nerd polybar pcmanfm alacritty rofi grub \
+    efibootmgr git network-manager-applet xorg-xinit xcompmgr sudo \
+    picom xf86-input-synaptics xwallpaper
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
